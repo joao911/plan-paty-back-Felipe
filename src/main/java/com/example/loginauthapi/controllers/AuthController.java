@@ -35,7 +35,7 @@ public class AuthController {
             String token = this.tokenService.generateToken(user);
             return ResponseEntity.ok(new ResponseDTO(user.getName(), token));
         }
-        return ResponseEntity.badRequest().build();
+        return ResponseEntity.badRequest().body("Senha incorreta corno!!");
     }
 
 
