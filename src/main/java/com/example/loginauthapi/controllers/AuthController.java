@@ -8,6 +8,7 @@ import com.example.loginauthapi.infra.security.TokenService;
 import com.example.loginauthapi.exceptions.CodigoRecuperacaoInvalidoException;
 import com.example.loginauthapi.exceptions.SenhaIgualAnteriorException;
 import com.example.loginauthapi.exceptions.UsuarioNotFoundException;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/auth")
 @RequiredArgsConstructor
 public class AuthController {
