@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Ignorar o arquivo .env ###
+.env
+/src/main/java/com/example/loginauthapi/.env
